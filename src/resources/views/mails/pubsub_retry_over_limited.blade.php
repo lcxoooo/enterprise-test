@@ -1,0 +1,9 @@
+<li>频道：{{$channel}}</li>
+<li>类型：{{$type}}</li>
+<li>偏移：{{$offset}}</li>
+<li>内容：{{$payload}}</li>
+<li>出错原因：{{$failed_reason}}</li>
+<li>出错次数：{{$retry_times}}</li>
+<li>发生时间：{{$time}}</li>
+<br/>
+<footer>{{$footer}}</footer>

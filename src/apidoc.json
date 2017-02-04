@@ -1,0 +1,9 @@
+{
+  "name": "Enterprise Micro Service",
+  "version": "1.0.0",
+  "description": "The Project Enterprise Micro Service.",
+  "apidoc": {
+    "title": "Enterprise Micro Service API Doc",
+    "url" : "http://ep.local.juhaoke.com/api"
+  }
+}
