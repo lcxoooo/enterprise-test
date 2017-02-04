@@ -11,7 +11,9 @@ RUN cd /data/www && \
     chown -R www:www /data/www
 
 RUN apt-get install -y vim
-RUN /usr/local/php/bin/php artisan migrate
+
+#这样写法错误
+#RUN /usr/local/php/bin/php artisan migrate
 
 RUN apidoc -i /data/www/app/ -o /data/www/public/docs/
 
