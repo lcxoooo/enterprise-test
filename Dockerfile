@@ -8,7 +8,7 @@ COPY configs/conf.d/queue.conf /etc/supervisor/conf.d/
 RUN cd /data/www && \
     /usr/local/php/bin/php /data/www/composer.phar install --no-dev --prefer-dist && \
     /usr/local/php/bin/php /data/www/composer.phar update --no-dev --prefer-dist && \
-    /usr/local/php/bin/php artisan migrate && \
+    /usr/local/php/bin/php artisan migrate --no-dev --prefer-dist && \
     chown -R www:www /data/www
 
 RUN apt-get install -y vim
