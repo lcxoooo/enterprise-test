@@ -12,8 +12,8 @@ RUN cd /data/www && \
 
 RUN apt-get install -y vim
 
-#这样写法错误
-#RUN /usr/local/php/bin/php artisan migrate
+#CMD启动容器的时候执行
+CMD /usr/local/php/bin/php artisan migrate
 
 RUN apidoc -i /data/www/app/ -o /data/www/public/docs/
 
