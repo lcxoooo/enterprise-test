@@ -13,7 +13,8 @@ RUN cd /data/www && \
 RUN apt-get install -y vim
 
 #CMD启动容器的时候执行
-CMD /usr/local/php/bin/php artisan migrate
+CMD cd /data/www && \
+	/usr/local/php/bin/php artisan migrate
 
 RUN apidoc -i /data/www/app/ -o /data/www/public/docs/
 
